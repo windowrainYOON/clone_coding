@@ -1,0 +1,200 @@
+@import "reset.css";
+
+html {
+  font-size: 62.5%;
+}
+
+.blind {
+  display: none;
+}
+
+body {
+  background-color: #fff;
+  color: #666;
+  font-family: "맑은 고딕", 돋움, tahoma;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 8rem;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+nav .wrap {
+  width: 118rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav #logo {
+  margin-left: 2.4rem;
+  height: 100%;
+  display: flex;
+}
+
+nav .logo-place {
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem 1.6rem 2rem 0;
+}
+
+nav #logo .logo-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(./nav.png);
+  background-repeat: no-repeat;
+}
+
+nav p {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .name {
+  margin: 2rem 0 0 0.3rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  color: #c62917;
+  font-weight: bold;
+}
+
+nav .subname {
+  line-height: 25px;
+  color: #292929;
+  font-size: 22px;
+}
+
+nav #menu {
+  width: 60rem;
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav #menu li {
+  margin: 1 1.2rem;
+  height: 7.6rem;
+  line-height: 7.6rem;
+}
+
+nav #menu li a {
+  color: #444;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+nav #menu li a:hover {
+  color: #c62917;
+}
+
+nav #menu .active {
+  padding-bottom: 2.8rem;
+  border-bottom: 4px solid #c62917;
+  color: #c62917;
+}
+
+nav #account {
+  height: 100%;
+  margin-right: 2.4rem;
+  padding: 2rem 0;
+  display: flex;
+}
+
+nav #account .message {
+  margin-left: 0.4rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav #account .message-icon {
+  background-image: url(./icn_m_chat_gray800_light.png);
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+nav #account .my {
+  margin-left: 0.4rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav #account .my-icon {
+  background-image: url(./icn_m_account_gray800_light.png);
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+#submenu {
+  margin-top: 8rem;
+  border-bottom: 
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 23rem;
+  padding: 1.5rem;
+}
+
+#container {
+  margin: 3rem auto 2.5rem auto;
+  width: 113rem;
+  display: flex;
+}
+
+#container .leftside {
+  width: 17.5rem;
+  margin-right: 1.5rem;
+}
+
+#container .login-box {
+  width: 17.5rem;
+  height: 22rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  margin-bottom: 0.5rem;
+  border: 1px solid #d6d6d6;
+}
+
+#container .main {
+  width: 60.5rem;
+  margin-right: 1.5rem;
+}
+
+#container .banners {
+  width: 60rem;
+  height: 16rem;
+  background: #888;
+  overflow: hidden;
+}
+
+#container .rightside {
+  width: 32.5rem;
+  background: #888;
+}

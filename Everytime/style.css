@@ -154,12 +154,39 @@ nav #account .my-icon {
 
 #submenu {
   margin-top: 8rem;
-  border-bottom: 
   border-bottom: 1px solid #d6d6d6;
   background-color: #f2f2f2;
   width: 100%;
   height: 23rem;
   padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#submenu .wrap {
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+}
+
+#submenu .divider {
+  margin-right: 1.5rem;
+  width: 1px;
+  height: 20rem;
+  background: #e3e3e3;
+}
+
+#submenu .group {
+  margin-right: 1.5rem;
+  width: 13rem;
+  display: flex;
+}
+
+#submenu .group li {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  color: #444;
+  text-overflow: ellipsis;
 }
 
 #container {
@@ -180,18 +207,230 @@ nav #account .my-icon {
   background: #f9f9f9;
   margin-bottom: 0.5rem;
   border: 1px solid #d6d6d6;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#container .account-display {
+  display: flex;
+  flex-direction: column;
+}
+
+#container .picture {
+  margin: 1.5rem auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.6rem;
+}
+
+#container .nickname {
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+  overflow: hidden;
+  color: #393939;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#container .school {
+  line-height: 1.5rem;
+  color: #a6a6a6;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#container .buttons {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+#container .buttons li {
+  width: 50%;
+  height: 2.5rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container .buttons .info {
+  margin-right: 0.5rem;
+}
+
+#container .buttons a {
+  line-height: 2.5rem;
+  color: #737373;
+  font-size: 1.3rem;
+}
+
+#container .card {
+  margin-bottom: 0.5rem;
+  border: 1px solid #d6d6d6;
+  background: #f9f9f9;
+}
+
+#container .menus {
+  display: flex;
+  flex-direction: column;
+}
+
+#container .menus a {
+  padding: 1rem 0 1rem 3.7rem;
+  border-bottom: 1px solid #e3e3e3;
+  line-height: 2rem;
+  color: #444;
+  font-size: 1.4rem;
+  background-repeat: no-repeat;
+  background-size: 1.2rem auto;
+  background-position: 1.5rem center;
+}
+
+#container a.myarticle {
+  background-image: url(./container.community.card.myarticle.png);
+}
+#container a.mycommentarticle {
+  background-image: url(./container.community.card.mycommentarticle.png);
+}
+#container a.myscrap {
+  background-image: url(./container.community.card.myscrap.png);
+  border-bottom: 0;
+}
+
+#container .leftside .banners {
+  width: 100%;
+  height: 11.8rem;
+}
+
+#container .ban {
+  height: 11.8rem;
 }
 
 #container .main {
   width: 60.5rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #container .banners {
   width: 60rem;
   height: 16rem;
+  margin-right: 0.5rem;
   background: #888;
   overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+#container .main .card {
+  margin: 0 0.5rem 0.5rem 0;
+  width: 29.5rem;
+  border: 1px solid #e3e3e3;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#container .main h3 {
+  padding: 1rem;
+}
+
+#container .main h3 a {
+  line-height: 2rem;
+  color: #c62917;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#container .main .list {
+  padding: 1rem;
+  border-top: 1px solid #e3e3e3;
+  display: flex;
+  justify-content: space-between;
+}
+
+#container .list p {
+  height: 1.7rem;
+  line-height: 1.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #444;
+  font-size: 1.4rem;
+}
+
+#container p.time {
+  margin-left: 1rem;
+  height: 1.7rem;
+  line-height: 1.8rem;
+  color: #a6a6a6;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+}
+
+#container .article {
+  padding: 1rem;
+  border-top: 1px solid #e3e3e3;
+  display: flex;
+  flex-direction: column;
+}
+
+#container .article p {
+  margin-bottom: 0.5rem;
+  height: 3.6rem;
+  line-height: 1.8rem;
+  word-spacing: normal;
+  overflow: hidden;
+  color: #444;
+  font-size: 1.3rem;
+}
+
+#container .reaction .time {
+  margin: 0 1rem 0 0;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  color: #a6a6a6;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+}
+
+#container .reaction {
+  display: flex;
+}
+
+#conatainer .reaction .status {
+  display: flex;
+}
+
+#container .vote {
+  color: #c62917;
+  background-image: url(./container.articles.vote.png);
+  margin-right: 0.5rem;
+  padding-left: 1.5rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  background-repeat: no-repeat;
+  background-size: 1.1rem 1.1rem;
+  background-position: left center;
+}
+
+#container .comment {
+  color: #0ca5af;
+  background-image: url(./container.articles.comment.png);
+  margin-right: 0.5rem;
+  padding-left: 1.5rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  background-repeat: no-repeat;
+  background-size: 1.1rem 1.1rem;
+  background-position: left center;
 }
 
 #container .rightside {
